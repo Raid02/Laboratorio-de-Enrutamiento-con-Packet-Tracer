@@ -117,14 +117,17 @@ Escalabilidad: permite agregar más routers OSPF sin tocar la configuración est
 Pruebas de conectividad realizadas
 # Desde PC0
 ping 192.168.20.2
+
 ping 192.168.30.2
 
 # Desde PC6
 ping 192.168.10.2
+
 ping 192.168.20.3
 
 # Desde R3
 show ip route
+
 # Debe mostrar rutas O E2 hacia la red 192.168.10.0/24
 
 Observaciones
@@ -132,5 +135,6 @@ Observaciones
 Las PCs dependen de su gateway por defecto para alcanzar redes remotas.
 
 La redistribución de rutas es clave para que el dominio OSPF conozca redes externas al mismo.
+
 
 Esta topología refleja un escenario real donde una empresa combina redes legadas estáticas con un backbone dinámico OSPF.
